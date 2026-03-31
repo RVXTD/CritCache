@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CritCache</title>
+<title>Login - CritCache</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 
@@ -28,7 +28,6 @@
     .logo {
         font-size: 36px;
         font-weight: 700;
-        letter-spacing: 2px;
         text-decoration: none;
         color: white;
     }
@@ -36,64 +35,75 @@
     .nav {
         display: flex;
         gap: 25px;
-        font-size: 14px;
     }
 
     .nav a {
         text-decoration: none;
         color: white;
-        cursor: pointer;
-    }
-
-    .nav a:hover {
-        text-decoration: underline;
+        font-size: 14px;
     }
 
     /* TITLE */
     .title {
-        margin-top: 60px;
+        margin-top: 50px;
         font-size: 40px;
         font-weight: 700;
         text-shadow: 2px 2px 0px #000;
     }
 
     .subtitle {
+        margin-top: 15px;
+        font-size: 26px;
+        color: black;
+        text-shadow: 2px 2px 0px whitesmoke;
+    }
+
+    /* FORM */
+    .form-container {
         margin-top: 60px;
-        font-size: 18px;
-        font-weight: 700;
-        letter-spacing: 2px;
-        text-shadow: 2px 2px 0px #000;
-    }
-
-    /* BOXES */
-    .categories {
-        margin-top: 80px;
         display: flex;
-        justify-content: center;
-        gap: 40px;
-        flex-wrap: wrap;
-    }
-
-    .box {
-        width: 220px;
-        height: 120px;
-        border: 2px solid #888;
-        display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: center;
-        font-size: 22px;
-        font-weight: 700;
-        text-shadow: 2px 2px 0px #000;
+        gap: 40px;
+    }
+
+    .input-box {
+        width: 600px;
+        height: 70px;
+        border: 2px solid #777;
         background-color: transparent;
-        cursor: pointer;
-        transition: 0.2s;
-        text-decoration: none;
+        font-size: 24px;
+        padding-left: 20px;
+        font-family: 'Orbitron', sans-serif;
+        outline: none;
+
+        /* YOU REQUESTED BLACK TEXT */
         color: black;
     }
 
-    .box:hover {
-        background-color: #c0c0c0;
-        transform: scale(1.05);
+    .input-box::placeholder {
+        color: black;
+        text-shadow: 1px 1px 0px whitesmoke;
+    }
+
+    /* BUTTON */
+    .login-btn {
+        margin-top: 20px;
+        padding: 15px 50px;
+        font-size: 22px;
+        font-family: 'Orbitron', sans-serif;
+        border: 2px solid black;
+
+        /* YOU REQUESTED THIS */
+        background-color: white;
+        color: black;
+
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    .login-btn:hover {
+        background-color: #e0e0e0;
     }
 </style>
 
@@ -102,12 +112,9 @@
 
 <!-- HEADER -->
 <div class="header">
-    <!-- Logo now clickable -->
     <a href="index.html" class="logo">CRITCACHE</a>
-
     <div class="nav">
-        <a href="account.html">ACCT</a>
-        <a href="gaming.html">RETRO GAMING</a>
+        <a href="retro.html">RETRO GAMING</a>
         <a href="40k.html">40K</a>
         <a href="dnd.html">DND</a>
         <a href="cards.html">CARD GAMES</a>
@@ -117,18 +124,14 @@
 
 <!-- CONTENT -->
 <div class="title">WELCOME TO CRITCACHE</div>
+<div class="subtitle">PLEASE LOG IN</div>
 
-<div class="subtitle">
-    YOUR ONE STOP SHOP FOR ALL HOBBY SHOPPING
-</div>
+<!-- FORM -->
+<div class="form-container">
+    <input type="text" class="input-box" placeholder="USERNAME">
+    <input type="password" class="input-box" placeholder="PASSWORD">
 
-<!-- CATEGORY BUTTONS (now links) -->
-<div class="categories">
-    <a href="40k.html" class="box">40K</a>
-    <a href="dnd.html" class="box">DND</a>
-    <a href="gaming.html" class="box">RETRO GAMING</a>
-    <a href="cards.html" class="box">CARD GAMES</a>
-    <a href="figures.html" class="box">ACTION FIGURES</a>
+    <button class="login-btn">LOG IN</button>
 </div>
 
 </body>

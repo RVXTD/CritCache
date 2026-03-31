@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CritCache</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Orbitron', sans-serif;
+        background-color: #d3d3d3;
+        text-align: center;
+    }
+
+    /* HEADER */
+    .header {
+        background: linear-gradient(to right, #1e5fd4, #1fd4c7);
+        padding: 20px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+    }
+
+    .logo {
+        font-size: 36px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-decoration: none;
+        color: white;
+    }
+
+    .nav {
+        display: flex;
+        gap: 25px;
+        font-size: 14px;
+    }
+
+    .nav a {
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+    }
+
+    .nav a:hover {
+        text-decoration: underline;
+    }
+
+    /* TITLE */
+    .title {
+        margin-top: 60px;
+        font-size: 40px;
+        font-weight: 700;
+        text-shadow: 2px 2px 0px #000;
+    }
+
+    .subtitle {
+        margin-top: 60px;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-shadow: 2px 2px 0px #000;
+    }
+
+    /* BOXES */
+    .categories {
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+
+    .box {
+        width: 220px;
+        height: 120px;
+        border: 2px solid #888;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+        font-weight: 700;
+        text-shadow: 2px 2px 0px #000;
+        background-color: transparent;
+        cursor: pointer;
+        transition: 0.2s;
+        text-decoration: none;
+        color: black;
+    }
+
+    .box:hover {
+        background-color: #c0c0c0;
+        transform: scale(1.05);
+    }
+</style>
+
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <!-- Logo now clickable -->
+    <a href="index.html" class="logo">CRITCACHE</a>
+
+    <div class="nav">
+        <a href="account.html">ACCT</a>
+        <a href="retro.html">RETRO GAMING</a>
+        <a href="40k.html">40K</a>
+        <a href="dnd.html">DND</a>
+        <a href="cards.html">CARD GAMES</a>
+        <a href="figures.html">ACTION FIGURES</a>
+    </div>
+</div>
