@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register - CritCache</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Orbitron', sans-serif;
+        background-color: #d3d3d3;
+        text-align: center;
+    }
+
+    /* HEADER */
+    .header {
+        background: linear-gradient(to right, #1e5fd4, #1fd4c7);
+        padding: 20px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+    }
+
+    .logo {
+        font-size: 36px;
+        font-weight: 700;
+        text-decoration: none;
+        color: white;
+    }
+
+    .nav {
+        display: flex;
+        gap: 25px;
+    }
+
+    .nav a {
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+    }
+
+    /* TITLE */
+    .title {
+        margin-top: 50px;
+        font-size: 40px;
+        font-weight: 700;
+        text-shadow: 2px 2px 0px #000;
+    }
+
+    .subtitle {
+        margin-top: 15px;
+        font-size: 26px;
+        color: darkslategray;
+        text-shadow: 2px 2px 0px gray;
+    }
+
+    /* FORM */
+    .form-container {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .input-box {
+        width: 600px;
+        height: 70px;
+        border: 2px solid #777;
+        background-color: transparent;
+        font-size: 24px;
+        padding-left: 20px;
+        font-family: 'Orbitron', sans-serif;
+        outline: none;
+        color: black;
+        text-shadow: 1px 1px 0px whitesmoke;
+    }
+
+    .input-box::placeholder {
+        color: black;
+        text-shadow: 1px 1px 0px whitesmoke;
+    }
+
+    /* BUTTON */
+    .register-btn {
+        margin-top: 20px;
+        padding: 15px 40px;
+        font-size: 22px;
+        font-family: 'Orbitron', sans-serif;
+        border: 2px solid black;
+        background-color: white;
+        color: black;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    .register-btn:hover {
+        background-color: #e0e0e0;
+    }
+</style>
+
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <a href="index.html" class="logo">CRITCACHE</a>
+    <div class="nav">
+        <a href="retro.html">RETRO GAMING</a>
+        <a href="40k.html">40K</a>
+        <a href="dnd.html">DND</a>
+        <a href="cards.html">CARD GAMES</a>
+        <a href="figures.html">ACTION FIGURES</a>
+    </div>
+</div>
+
+<!-- CONTENT -->
+<div class="title">WELCOME TO CRITCACHE</div>
+<div class="subtitle">PLEASE CREATE AN ACCOUNT</div>
+
+<!-- FORM -->
+<div class="form-container">
+    <input type="text" class="input-box" placeholder="USERNAME">
+    <input type="password" class="input-box" placeholder="PASSWORD">
+    <input type="password" class="input-box" placeholder="CONFIRM PASSWORD">
+
+    <button class="register-btn">REGISTER</button>
+</div>
+
+</body>
+</html>
