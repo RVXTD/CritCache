@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CritCache</title>
+<title>Account - CritCache</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 
@@ -15,7 +15,7 @@
         text-align: center;
     }
 
-    /* HEADER */
+    /* HEADER (same as your other pages) */
     .header {
         background: linear-gradient(to right, #1e5fd4, #1fd4c7);
         padding: 20px 40px;
@@ -28,7 +28,6 @@
     .logo {
         font-size: 36px;
         font-weight: 700;
-        letter-spacing: 2px;
         text-decoration: none;
         color: white;
     }
@@ -36,63 +35,57 @@
     .nav {
         display: flex;
         gap: 25px;
-        font-size: 14px;
     }
 
     .nav a {
         text-decoration: none;
         color: white;
-        cursor: pointer;
-    }
-
-    .nav a:hover {
-        text-decoration: underline;
+        font-size: 14px;
     }
 
     /* TITLE */
     .title {
-        margin-top: 60px;
+        margin-top: 80px;
         font-size: 40px;
-        font-weight: 700;
         text-shadow: 2px 2px 0px #000;
     }
 
     .subtitle {
-        margin-top: 60px;
-        font-size: 18px;
-        font-weight: 700;
-        letter-spacing: 2px;
-        text-shadow: 2px 2px 0px #000;
+        margin-top: 20px;
+        font-size: 22px;
+        color: red;
+        text-shadow: 2px 2px 0px red;
     }
 
-    /* BOXES */
-    .categories {
-        margin-top: 80px;
+    /* BUTTON CONTAINER */
+    .button-container {
+        margin-top: 100px;
         display: flex;
         justify-content: center;
-        gap: 40px;
-        flex-wrap: wrap;
+        gap: 60px;
     }
 
-    .box {
+    /* BUTTON STYLE */
+    .account-btn {
         width: 220px;
         height: 120px;
-        border: 2px solid #888;
+        border: 2px solid black;
         display: flex;
         align-items: center;
         justify-content: center;
         font-size: 22px;
-        font-weight: 700;
-        text-shadow: 2px 2px 0px #000;
-        background-color: transparent;
-        cursor: pointer;
-        transition: 0.2s;
         text-decoration: none;
+        font-family: 'Orbitron', sans-serif;
+
+        /* same style you've been using */
+        background-color: white;
         color: black;
+
+        transition: 0.2s;
     }
 
-    .box:hover {
-        background-color: #c0c0c0;
+    .account-btn:hover {
+        background-color: #e0e0e0;
         transform: scale(1.05);
     }
 </style>
@@ -102,11 +95,8 @@
 
 <!-- HEADER -->
 <div class="header">
-    <!-- Logo now clickable -->
     <a href="index.html" class="logo">CRITCACHE</a>
-
     <div class="nav">
-        <a href="account.html">ACCT</a>
         <a href="retro.html">RETRO GAMING</a>
         <a href="40k.html">40K</a>
         <a href="dnd.html">DND</a>
@@ -114,3 +104,15 @@
         <a href="figures.html">ACTION FIGURES</a>
     </div>
 </div>
+
+<!-- CONTENT -->
+<div class="title">ACCOUNT ACCESS</div>
+<div class="subtitle">CHOOSE AN OPTION</div>
+
+<div class="button-container">
+    <a href="LoginPage.html" class="account-btn">LOG IN</a>
+    <a href="RegisterPage.html" class="account-btn">REGISTER</a>
+</div>
+
+</body>
+</html>
