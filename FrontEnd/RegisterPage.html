@@ -124,12 +124,15 @@
 <div class="subtitle">PLEASE CREATE AN ACCOUNT</div>
 
 <!-- FORM -->
+<!-- FORM -->
 <div class="form-container">
-    <input type="text" class="input-box" placeholder="USERNAME">
-    <input type="password" class="input-box" placeholder="PASSWORD">
-    <input type="password" class="input-box" placeholder="CONFIRM PASSWORD">
+    <form action="register.php" method="POST">
+        <input type="text" name="username" class="input-box" placeholder="USERNAME" required>
+        <input type="password" name="password" class="input-box" placeholder="PASSWORD" required>
+        <input type="password" name="confirm_password" class="input-box" placeholder="CONFIRM PASSWORD" required>
 
-    <button class="register-btn">REGISTER</button>
+        <button type="submit" class="register-btn">REGISTER</button>
+    </form>
 </div>
 
 </body>
