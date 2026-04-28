@@ -1,0 +1,97 @@
+    body {
+        margin: 0;
+        font-family: 'Orbitron', sans-serif;
+        background-color: #d3d3d3;
+        text-align: center;
+    }
+
+    /* HEADER */
+    .header {
+        background: linear-gradient(to right, #1e5fd4, #1fd4c7);
+        padding: 20px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+    }
+
+    .logo {
+        font-size: 36px;
+        font-weight: 700;
+        text-decoration: none;
+        color: white;
+    }
+
+    .nav {
+        display: flex;
+        gap: 25px;
+    }
+
+    .nav a {
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+    }
+
+    /* TITLE */
+    .title {
+        margin-top: 50px;
+        font-size: 40px;
+        font-weight: 700;
+        text-shadow: 2px 2px 0px #000;
+    }
+
+    .subtitle {
+        margin-top: 15px;
+        font-size: 26px;
+        color: black;
+        text-shadow: 2px 2px 0px whitesmoke;
+    }
+
+    /* FORM */
+    .form-container {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .input-box {
+        width: 600px;
+        height: 70px;
+        border: 2px solid #777;
+        background-color: transparent;
+        font-size: 24px;
+        padding-left: 20px;
+        font-family: 'Orbitron', sans-serif;
+        outline: none;
+
+        /* YOU REQUESTED BLACK TEXT */
+        color: black;
+    }
+
+    .input-box::placeholder {
+        color: black;
+        text-shadow: 1px 1px 0px whitesmoke;
+    }
+
+    /* BUTTON */
+    .login-btn {
+        margin-top: 20px;
+        padding: 15px 50px;
+        font-size: 22px;
+        font-family: 'Orbitron', sans-serif;
+        border: 2px solid black;
+
+        /* YOU REQUESTED THIS */
+        background-color: white;
+        color: black;
+
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    .login-btn:hover {
+        background-color: #e0e0e0;
+    }

@@ -2,7 +2,8 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "cli": {
-    "packageManager": "npm"
+    "packageManager": "npm",
+    "analytics": "fdbc7373-a72e-4d9d-a0cf-0a2d7f1f2ced"
   },
   "newProjectRoot": "projects",
   "projects": {
@@ -62,6 +63,10 @@
         },
         "serve": {
           "builder": "@angular/build:dev-server",
+		"options": {
+			"host": "0.0.0.0",
+			"allowedHosts": ["*"]
+			}
           "configurations": {
             "production": {
               "buildTarget": "frontend:build:production"
